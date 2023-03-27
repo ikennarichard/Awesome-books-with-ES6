@@ -1,3 +1,6 @@
+/* eslint-disable class-methods-use-this */
+import Book from './Book.js';
+
 export default class Helpers {
   constructor() {
     this.bookStore = JSON.parse(localStorage.getItem('book_store')) || [];
