@@ -1,0 +1,159 @@
+body {
+  display: grid;
+  gap: 2em;
+  min-height: 100vh;
+}
+
+header {
+  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 0.7em;
+  align-items: center;
+  height: 40px;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+nav ul li {
+  border-right: 3px solid black;
+  padding-right: 0.5em;
+}
+
+.book_display li {
+  margin: 0;
+  text-transform: capitalize;
+  display: flex;
+  gap: 6px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+nav ul li:last-child {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.change_color {
+  color: blue;
+}
+
+main {
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+
+input {
+  display: block;
+  margin-block-end: 5px;
+  width: 300px;
+  padding: 5px;
+  border: 1.5px solid black;
+}
+
+button {
+  border: 1px solid black;
+  padding: 0.4em;
+  width: 100px;
+}
+
+.book_display {
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+  gap: 0.2em;
+  border: 3px solid black;
+  padding: 0.5em;
+  display: none;
+}
+
+.book_display .book_details {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  padding: 0.5em;
+}
+
+.book_display ul div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10em;
+  padding: 0.2em;
+}
+
+hr {
+  display: none;
+}
+
+.book_display ul div:nth-child(odd) {
+  background-color: lavender;
+}
+
+form {
+  margin-block-start: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+.contact_section,
+.add_section, .list_section {
+  place-items: center;
+  display: none;
+}
+
+.show {
+  display: grid;
+}
+
+footer {
+  border: 3px solid black;
+  padding: 0.3em;
+  height: 30px;
+}
+
+address {
+  font-style: normal;
+  font-weight: bold;
+}
+
+address a {
+  text-decoration: none;
+  color: black;
+}
+
+.hide_section {
+  display: none;
+}
+
+.date_display {
+  position: absolute;
+  top: 4em;
+  right: 1em;
+}
