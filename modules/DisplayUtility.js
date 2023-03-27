@@ -19,4 +19,4 @@ const displayDate = () => {
   document.querySelector('.date_display').innerHTML = `${date.toDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}${date.getHours() < 12 ? 'am' : 'pm'}`;
 }
 
-export {toggleSections, changeLinksColor, clearInputs, displayDate}
+export {toggleSections, changeLinksColor, clearInputs, displayDate};
