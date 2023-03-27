@@ -183,6 +183,7 @@ const DATETIME_MED_WITH_SECONDS = {
   year: n,
   month: s,
   day: n,
+  weekday: s,
   hour: n,
   minute: n,
   second: n,

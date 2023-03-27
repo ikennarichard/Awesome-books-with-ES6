@@ -1,3 +1,5 @@
+import { DateTime } from "./luxon.js";
+
 const toggleSections = (e) => {
   const { item } = e.currentTarget.dataset;
   document.querySelector('.show').classList.remove('show');
@@ -15,8 +17,8 @@ const clearInputs = () => {
 }
 
 const displayDate = () => {
-  const date = new Date();
-  document.querySelector('.date_display').innerHTML = `${date.toDateString()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}${date.getHours() < 12 ? 'am' : 'pm'}`;
+  const date = DateTime.now();
+  document.querySelector('.date_display').innerHTML = `${date.toLocaleString(DateTime.DATETIME_MED_WITH_SECONDS)}`;
 }
 
 export {toggleSections, changeLinksColor, clearInputs, displayDate};
