@@ -123,7 +123,8 @@ form button {
 }
 
 .contact_section,
-.add_section, .list_section {
+.add_section,
+.list_section {
   place-items: center;
   display: none;
 }

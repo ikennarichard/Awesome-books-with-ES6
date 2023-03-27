@@ -1,5 +1,7 @@
-import Helpers from "./modules/Helpers.js";
-import {toggleSections, changeLinksColor, clearInputs, displayDate} from './modules/DisplayUtility.js'
+import Helpers from './modules/Helpers.js';
+import {
+  toggleSections, changeLinksColor, clearInputs, displayDate,
+} from './modules/DisplayUtility.js';
 
 const form = document.querySelector('form');
 const awesomeBooks = new Helpers();
